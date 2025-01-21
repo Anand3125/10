@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Send us a message</h2>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="details-section">
+            <h2>Contact us</h2>
+           
+            <p>We're open for any suggestion or just to have a chat</p>
+            <p><strong><i class="fas fa-map-marker-alt"></i> Address:</strong> 198 West 21th Street, Suite 721<br> New York NY 10016</p>
+            <p><strong><i class="fas fa-phone-alt"></i> Phone:</strong> +123 456 789</p>
+            <p><strong><i class="fas fa-envelope"></i> 
+                
+                
+                Email:</strong> info@yourdomain.com</p>
+            <p><strong><i class="fas fa-globe"></i> Website:</strong> yoursite.com</p>
+        </div>
+        
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

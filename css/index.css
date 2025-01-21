@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+    --button-color: #c139f3;
+    --text-color: white;
+    --detail-bg-color: #f4f4f4;
+    --detail-text-color: #333;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+    --font-size-small: 0.875rem;
+    --border-radius: 0.2rem;
+    --box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: "Inter",Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    max-width: 56.25rem;
+    width: 100%;
+    padding: 0.3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.form-section, .details-section {
+    flex: 1;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+}
+
+.form-section {
+    background: linear-gradient(135deg, var(--button-color), var(--secondary-color));
+    color: var(--text-color);
+}
+
+.details-section {
+    background: var(--detail-bg-color);
+    color: var(--detail-text-color);
+    gap: 4rem;
+}
+
+.details-section h2 {
+    position: relative;
+    font-size: var(--font-size-large);
+   
+}
+
+
+.details-section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    margin-top: 4px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: var(--font-size-large);
+}
+
+p {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin: 0.625rem 0 0.313rem;
+    font-size: var(--font-size-base);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-size: var(--font-size-base);
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+    transition: border-color 0.3s;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 0.2rem white;
+}
+
+textarea {
+    resize: none;
+    height: 5rem;
+}
+
+button {
+    height: 3rem;
+    width: 10rem;
+    background: var(--button-color);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 0.2rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+}
+
+button:hover {
+    background: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+.details-section h2 {
+    margin-bottom: 1rem;
+}
+
+.details-section p {
+    color: #333;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.details-section i {
+    color: #333;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.details-section p {
+    margin: 1.5rem 0;
+}
